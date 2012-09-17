@@ -1,0 +1,2 @@
+serviceClass: br.com.m2msolutions.controleviagens.client.ControleViagensService
+path: 972543AF7E9DBD48CE5E65B50D4E5042.gwt.rpc

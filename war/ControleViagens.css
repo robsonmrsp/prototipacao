@@ -1,0 +1,227 @@
+/** Add css rules here for your application. */
+/** Example rules used by the template application (remove for your app) */
+h1 {
+	font-size: 2em;
+	font-weight: bold;
+	color: #777777;
+	margin: 40px 0px 70px;
+	text-align: center;
+}
+
+.sendButton {
+	display: block;
+	font-size: 16pt;
+}
+
+/** Most GWT widgets already have a style name defined */
+.gwt-DialogBox {
+	width: 400px;
+}
+
+.dialogVPanel {
+	margin: 5px;
+}
+
+.serverResponseLabelError {
+	color: red;
+}
+
+/** Set ids using widget.getElement().setId("idOfElement") */
+#closeButton {
+	margin: 15px 6px 6px;
+}
+
+.controleViagens-tituloPonto {
+	font-size: 1.5em;
+	font-weight: bold;
+}
+
+.controleViagens-totalViagens {
+	font-size: 1.0em;
+	font-weight: bold;
+	text-align: right
+}
+
+.controleViagens-Nh {
+	font-size: 1.0em;
+	font-weight: bold;
+	color: #006400;
+}
+
+.controleViagens-At {
+	font-size: 1.0em;
+	font-weight: bold;
+	color: #0000ff
+}
+
+.controleViagens-Ad {
+	font-size: 1.0em;
+	font-weight: bold;
+	color: #ff0000
+}
+
+.controleViagens-Ex {
+	font-size: 1.0em;
+	font-weight: bold;
+}
+
+/* widget */
+/* esquerdo */
+.a-point {
+	border-bottom-width: 2px;
+	border-bottom-style: solid;
+	border-bottom-color: #dae6fb;
+	/* 	padding-left: -1px; */
+	border-right-width: 2px;
+	border-right-style: solid;
+	border-right-color: #dae6fb;
+}
+
+.b-point {
+	border-bottom-width: 2px;
+	border-bottom-style: solid;
+	border-bottom-color: #dae6fb;
+	padding-left: -1px;
+	border-left-width: 2px;
+	border-left-style: solid;
+	border-left-color: #dae6fb;
+}
+
+.div-point {
+	border-bottom-width: 2px;
+	border-bottom-style: solid;
+	border-bottom-color: #dae6fb;
+	/* 	height: 25px; */
+/* 	border-right-style: solid; */ /* 	border-right-color: #000; */
+}
+
+.master-style {
+	border-radius: 10px;
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+	-moz-box-shadow: 0px 0px 25px #555;
+	-webkit-box-shadow: 0px 0px 25px #555;
+}
+
+.main-style { /* 	border-style: solid !important; */
+	/* 	border-width: 1px !important; */
+	border-radius: 10px;
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+/* 	-moz-box-shadow: 0px 0px 25px #555; */
+/* 	-webkit-box-shadow: 0px 0px 25px #555; */
+	/* 	border-radius: 12px 12px; */
+/* 	border-bottom-right-radius: 10% 5%; */
+/* 	border-top-right-radius: 10px; */
+}
+
+.point-name {
+	font-stretch: normal;
+	padding-left: 5px;
+	font-size: 16px;
+	font-style: normal;
+	font-family: Arial;
+	font-weight: bold;
+	color: #013c65
+}
+
+.main-header {
+	border-bottom-width: 2px;
+	border-bottom-style: solid;
+	border-bottom-color: #8a919d;
+}
+
+.point {
+	padding-left: 10px;
+	height: 22px;
+	color: rgb(22, 22, 165);
+	font-style: normal;
+	font-family: Arial;
+	font-weight: bold;
+}
+
+.window-name {
+	font-stretch: normal;
+	padding-left: 5px;
+	font-size: 19px;
+	font-style: normal;
+	font-family: Lucida, sans-serif;
+	font-weight: bold;
+	color: #2b4351
+}
+
+.row {
+	background-color: silver;
+}
+
+.left-cell { /* 	border-bottom-width: 1px; */
+	/* 	border-bottom-style: solid; */ /* 	border-bottom-color: #000; */
+	height: 21px;
+	border-right-width: 2px !important;
+	border-right-style: solid !important;
+	border-right-color: #dae6fb !important;
+}
+
+.right-cell { /* 	border-bottom-width: 1px; */
+	/* 	border-bottom-style: solid; */ /* 	border-bottom-color: #000; */
+	height: 21px;
+	border-left-width: 2px !important;
+	border-left-style: solid !important;
+	border-left-color: #dae6fb !important;
+}
+
+.cell { /* 	border-bottom-width: 1px; */
+	/* 	border-bottom-style: solid; */ /* 	border-bottom-color: #000; */
+	height: 21px;
+	border-left-width: 2px !important;
+	border-left-style: groove !important;
+	border-left-color: #dae6fb !important;
+}
+
+.past {
+	color: #728897;
+	font-family: sans-serif;
+	text-align: center;
+	font-weight: bold;
+	font-size: 13px;
+}
+
+.present {
+	background-image: url("../images/bg_row.png");
+	border-left-width: 0px;
+	border-right-width: 0px;
+	border-top-width: 1px;
+	border-bottom-width: 1px;
+	border-top-color: #98e8f9;
+	border-bottom-color: #98e8f9;
+	border-style: solid;
+	background-color: #cce3e8;
+	font-size: 14px;
+	text-align: center;
+	font-weight: bold;
+	color: #000
+}
+
+.future {
+	color: #000;
+	text-align: center;
+	font-size: 13px;
+	font-family: sans-serif;
+	font-weight: bold;
+}
+
+.detail {
+	font-size: 14px;
+	text-align: center;
+	font-family: sans-serif;
+	font-weight: bold;
+	font-size: 14px;
+}
+
+#controls {
+	right: 400px;
+	overflow: visible;
+	position: absolute;
+	top: 5px;
+	z-index: 101;
+}

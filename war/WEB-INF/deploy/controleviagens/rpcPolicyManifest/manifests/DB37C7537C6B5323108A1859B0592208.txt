@@ -1,0 +1,2 @@
+serviceClass: br.com.m2msolutions.controleviagens.client.GreetingService
+path: 687AA422DE5DBD51617EB97799066A78.gwt.rpc
