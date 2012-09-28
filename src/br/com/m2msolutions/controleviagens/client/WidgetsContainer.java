@@ -3,6 +3,9 @@ package br.com.m2msolutions.controleviagens.client;
 import com.extjs.gxt.ui.client.Style.Orientation;
 import com.extjs.gxt.ui.client.fx.Draggable;
 import com.extjs.gxt.ui.client.widget.LayoutContainer;
+import com.extjs.gxt.ui.client.widget.Window;
+import com.extjs.gxt.ui.client.widget.layout.FitData;
+import com.extjs.gxt.ui.client.widget.layout.FitLayout;
 import com.extjs.gxt.ui.client.widget.layout.RowLayout;
 import com.google.gwt.event.dom.client.ClickEvent;
 import com.google.gwt.event.dom.client.ClickHandler;
@@ -12,7 +15,8 @@ import com.google.gwt.user.client.ui.RootPanel;
 public class WidgetsContainer extends LayoutContainer {
 	private LayoutContainer iconContainer;
 	private Image image;
-	private WidgetDepartureControl controlPartica;
+	private Window controlParticaWindow = new Window();
+	private DepartureControlPanel controlPartica;
 
 	public WidgetsContainer() {
 		setLayout(new RowLayout(Orientation.HORIZONTAL));
@@ -38,10 +42,10 @@ public class WidgetsContainer extends LayoutContainer {
 			image.addClickHandler(new ClickHandler() {
 				@Override
 				public void onClick(ClickEvent event) {
-					if (controlPartica.isVisible()) {
-						controlPartica.hide();
+					if (controlParticaWindow.isVisible()) {
+						controlParticaWindow.hide();
 					} else {
-						controlPartica.show();
+						controlParticaWindow.show();
 					}
 				}
 			});
@@ -50,11 +54,17 @@ public class WidgetsContainer extends LayoutContainer {
 	}
 
 	private void initControls() {
-		controlPartica = new WidgetDepartureControl();
-
-		Draggable d = new Draggable(controlPartica, controlPartica);
-		d.setUseProxy(true);
-		RootPanel.get("controlsContainer").add(controlPartica);
-		controlPartica.hide();
+		controlPartica = new DepartureControlPanel();
+		controlParticaWindow.setLayout(new FitLayout());
+		controlParticaWindow.setSize(455, 270);
+		controlParticaWindow.setTitle("Controle de partida(001 - SANTACRUZ x ALORADA - PARADOR)");
+		
+		controlParticaWindow.setFrame(true);
+		controlParticaWindow.setBodyStyle("backgroundColor: white");
+		controlParticaWindow.add(controlPartica);
+//		Draggable d = new Draggable(controlPartica, controlPartica);
+//		d.setUseProxy(true);
+//		RootPanel.get("controlsContainer").add(controlPartica);
+//		controlPartica.hide();
 	}
 }
