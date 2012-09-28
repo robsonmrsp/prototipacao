@@ -15,7 +15,7 @@ import com.google.gwt.user.client.ui.RootPanel;
 public class WidgetsContainer extends LayoutContainer {
 	private LayoutContainer iconContainer;
 	private Image image;
-	private Window controlParticaWindow = new Window();
+	private com.gargoylesoftware.htmlunit.javascript.host.Window controlParticaWindow = new Window();
 	private DepartureControlPanel controlPartica;
 
 	public WidgetsContainer() {
@@ -57,8 +57,8 @@ public class WidgetsContainer extends LayoutContainer {
 		controlPartica = new DepartureControlPanel();
 		controlParticaWindow.setLayout(new FitLayout());
 		controlParticaWindow.setSize(455, 270);
-		controlParticaWindow.setTitle("Controle de partida(001 - SANTACRUZ x ALORADA - PARADOR)");
-		
+		controlParticaWindow.setHeading(("Controle de partida(001 - SANTACRUZ x ALORADA - PARADOR)");
+			
 		controlParticaWindow.setFrame(true);
 		controlParticaWindow.setBodyStyle("backgroundColor: white");
 		controlParticaWindow.add(controlPartica);
